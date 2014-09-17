@@ -63,6 +63,8 @@ h3{
 	font-weight:300;
 }
 
+
+
 ul, li {
     padding: 0;  
     margin: 0;
@@ -125,7 +127,7 @@ figure{
 }
 
 i{
-	padding-left:.5em;
+	padding-right:.5em;
 }
 
 /* -- /GLOBAL STYLES --*/
@@ -262,8 +264,10 @@ nav > ul > li{
 	background:#216796;
 }
 
-.project{
-
+.project-content img{
+	width:100%;
+	border:3px solid #AAD0E9;
+	box-shadow:2px 2px 5px #103F55
 }
 
 .project-toggle h2, .position h2, .project-toggle h3, .position h3{
@@ -274,6 +278,7 @@ nav > ul > li{
 .project-toggle{
 	padding:1em;
 	transition:background .15s ease;
+	overflow:hidden;
 }
 
 .project-toggle:hover{
@@ -285,8 +290,22 @@ nav > ul > li{
 }
 
 .project-content{
+	background:#2980B9;
+	box-shadow:inset 0px 0px 10px #000;
 	display:none;
 }
+
+.project-content h3{
+	font-weight:400;
+	margin-bottom:.2em;
+}
+
+.project-content p{
+	font-size:1.2em;
+	margin-top:.2em;
+	margin-bottom:1em;
+}
+
 
 .expand{
 	padding:.5em;
@@ -302,6 +321,53 @@ nav > ul > li{
 
 .proj-img img{
 	width:9em;
+	transition:margin .25s ease;
+}
+
+.project-link:hover .proj-img img{
+	margin-right:2em;
+}
+
+.project-featured-img{
+	float:right!important;
+	clear:both;
+	display:block;
+	padding-top:1em!important;
+	padding-left:1em!important;
+}
+
+.project-overview{
+	overflow:auto;
+	padding:1em 1em 0 1em;
+}
+
+.project-process{
+	padding:1em;
+}
+
+.project-process figure{
+	padding-bottom:1em;
+} 
+
+.project-details{
+	padding: 0em 1em;
+}
+
+.collapse{
+	text-align:center;
+
+}
+
+.collapse p{
+	padding:.5em;
+	display:inline-block;
+	background: #216796;
+	cursor:pointer;
+	transition:background .25s ease;
+}
+
+.collapse p:hover{
+	background: #135886;
 }
 
 /* -- /PROJECT STYLES -- */
@@ -333,13 +399,17 @@ nav > ul > li{
 
 #contact h2{
 	margin-top:0;
+
 }
 
 #contact h3 a{
-	color:#fff;
-	text-decoration:underline;
+	color:#C2E7FF;
+	text-decoration:none;
+	transition:all .25s ease;
 }
-
+#contact h3 a:hover{
+	color:#fff;
+}
 #contact input, #contact textarea{
 	width:90%;
 	max-width:90%;
@@ -383,12 +453,17 @@ nav > ul > li{
 	padding:.5em .25em 0 0;
 	font-size:3em;
 	text-decoration:none!important;
+
 }
 
 #contact-form label i, .social i{
 	text-shadow: 2px 2px 2px rgba(14, 60, 110, 0.83);
 	color:#AAD0E9;
-	transition:color .15s;
+	transition:color .5s;
+}
+
+#contact-form label i{
+	padding:0;
 }
 
 .social i:hover{
@@ -420,6 +495,8 @@ button{
 }
 
 /* -- /CONTACT STYLES -- */
+
+
 
 /* -- FOOTER STYLES -- */
 
