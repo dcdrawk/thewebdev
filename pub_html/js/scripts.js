@@ -23,7 +23,6 @@ $(document).ready( function() {
 	var sandwich=false;
 	
 	
-	
     $(window).resize(function(){
 	});
 	
@@ -54,6 +53,7 @@ $(document).ready( function() {
 		if(scc==false){
 			$(".scc-expand").attr("src", "img/collapse.png");
 			scc=true;
+			$("img.lazy").lazyload({event : "click"});
 		}else{
 			scc=false;
 			$(".scc-expand").attr("src", "img/expand.png");

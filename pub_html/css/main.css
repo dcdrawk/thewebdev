@@ -211,7 +211,7 @@ nav > ul > li{
 /* -- ABOUT STYLES -- */
 
 #about{
-	margin:2em 0em 4em 0;
+	margin:4em 0em 4em 0;
 }
 
 #about img{
@@ -234,9 +234,9 @@ nav > ul > li{
 #about-heading p{
 	font-size:1.2em;
 	padding:1em;
-	background:#1AB999;
+	background:#359E89;
 	color:#fff;
-	border-left:3px solid #16A085;
+	border-left:10px solid #0C6150;
 	box-shadow:3px 3px 5px rgba(21, 83, 56, 0.75);
 	margin:1em 0;
 }
@@ -245,6 +245,14 @@ nav > ul > li{
 	text-align:center!important;
 	font-size:.75em;
 	margin-top:2em;
+}
+
+#more-about h3{
+	padding:.5em!important;
+	display:inline-block;
+}
+#more-toggle{
+	displ
 }
 /* -- /ABOUT STYLES -- */
 
